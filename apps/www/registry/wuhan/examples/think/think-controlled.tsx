@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Think } from "@/registry/wuhan/ui/think";
 import { Button } from "@/registry/wuhan/ui/button";
+import { Sparkles } from "lucide-react";
 
 const thinkingSteps = [
   "正在分析您的问题...",
@@ -73,6 +74,7 @@ export default function ThinkControlled() {
 
         <Think
           title="AI 助手正在思考..."
+          icon={!loading && isThinking ?  <Sparkles className="size-4 text-primary animate-pulse" /> : undefined}
           loading={loading}
           expanded={expanded}
           onExpand={setExpanded}
