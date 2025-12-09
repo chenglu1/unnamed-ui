@@ -4,29 +4,37 @@ import { ThemeEditor } from "@/components/theme-editor";
 import { Button } from "@/registry/wuhan/ui/button";
 import { Textarea } from "@/registry/wuhan/ui/textarea";
 import { Prompt } from "@/registry/wuhan/blocks/prompt-01";
-import { Card, CardContent, CardHeader, CardTitle } from "@/registry/wuhan/ui/card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/registry/wuhan/ui/card";
 import { Separator } from "@/registry/wuhan/ui/separator";
 
 export default function Themes() {
   return (
-    <div 
+    <div
       className="flex h-[calc(100vh-var(--spacing)*14)] overflow-hidden"
-      style={{ gap: 'calc(var(--spacing) * 6)', padding: 'calc(var(--spacing) * 6)' }}
+      style={{
+        gap: "calc(var(--spacing) * 6)",
+        padding: "calc(var(--spacing) * 6)",
+      }}
     >
       {/* 左侧：Tokens 区域 */}
       <div className="flex-shrink-0 w-80 flex flex-col overflow-hidden">
-        <div style={{ marginBottom: 'calc(var(--spacing) * 4)' }}>
+        <div style={{ marginBottom: "calc(var(--spacing) * 4)" }}>
           <h1 className="text-2xl font-semibold tracking-tight">Tokens</h1>
-          <p 
+          <p
             className="text-sm text-muted-foreground"
-            style={{ marginTop: 'calc(var(--spacing) * 1)' }}
+            style={{ marginTop: "calc(var(--spacing) * 1)" }}
           >
             Customize your theme tokens
           </p>
         </div>
-        <div 
+        <div
           className="flex-1 overflow-y-auto"
-          style={{ paddingTop: 'calc(var(--spacing) * 4)' }}
+          style={{ paddingTop: "calc(var(--spacing) * 4)" }}
         >
           <ThemeEditor />
         </div>
@@ -36,9 +44,9 @@ export default function Themes() {
       <Separator orientation="vertical" className="h-full" />
 
       {/* 右侧：组件预览区域 */}
-      <div 
+      <div
         className="flex-1 flex flex-col overflow-y-auto min-w-0"
-        style={{ gap: 'calc(var(--spacing) * 6)' }}
+        style={{ gap: "calc(var(--spacing) * 6)" }}
       >
         {/* Button Card */}
         <Card>
@@ -46,9 +54,9 @@ export default function Themes() {
             <CardTitle>Button</CardTitle>
           </CardHeader>
           <CardContent>
-            <div 
+            <div
               className="flex flex-wrap items-center"
-              style={{ gap: 'calc(var(--spacing) * 2)' }}
+              style={{ gap: "calc(var(--spacing) * 2)" }}
             >
               <Button variant="default">Button</Button>
               <Button variant="outline">Outline</Button>

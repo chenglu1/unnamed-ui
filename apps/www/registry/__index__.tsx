@@ -22,7 +22,7 @@ export const Index: Record<string, Record<string, any>> = {
         const exportName =
           Object.keys(mod).find(
             (key) =>
-              typeof mod[key] === "function" || typeof mod[key] === "object"
+              typeof mod[key] === "function" || typeof mod[key] === "object",
           ) || item.name;
         return { default: mod.default || mod[exportName] };
       }),
@@ -46,7 +46,7 @@ export const Index: Record<string, Record<string, any>> = {
         const exportName =
           Object.keys(mod).find(
             (key) =>
-              typeof mod[key] === "function" || typeof mod[key] === "object"
+              typeof mod[key] === "function" || typeof mod[key] === "object",
           ) || item.name;
         return { default: mod.default || mod[exportName] };
       }),
@@ -70,7 +70,7 @@ export const Index: Record<string, Record<string, any>> = {
         const exportName =
           Object.keys(mod).find(
             (key) =>
-              typeof mod[key] === "function" || typeof mod[key] === "object"
+              typeof mod[key] === "function" || typeof mod[key] === "object",
           ) || item.name;
         return { default: mod.default || mod[exportName] };
       }),
@@ -94,7 +94,7 @@ export const Index: Record<string, Record<string, any>> = {
         const exportName =
           Object.keys(mod).find(
             (key) =>
-              typeof mod[key] === "function" || typeof mod[key] === "object"
+              typeof mod[key] === "function" || typeof mod[key] === "object",
           ) || item.name;
         return { default: mod.default || mod[exportName] };
       }),
@@ -120,7 +120,7 @@ export const Index: Record<string, Record<string, any>> = {
         const exportName =
           Object.keys(mod).find(
             (key) =>
-              typeof mod[key] === "function" || typeof mod[key] === "object"
+              typeof mod[key] === "function" || typeof mod[key] === "object",
           ) || item.name;
         return { default: mod.default || mod[exportName] };
       }),
@@ -146,7 +146,175 @@ export const Index: Record<string, Record<string, any>> = {
         const exportName =
           Object.keys(mod).find(
             (key) =>
-              typeof mod[key] === "function" || typeof mod[key] === "object"
+              typeof mod[key] === "function" || typeof mod[key] === "object",
+          ) || item.name;
+        return { default: mod.default || mod[exportName] };
+      }),
+      categories: undefined,
+      meta: undefined,
+    },
+    "think-demo": {
+      name: "think-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["think"],
+      files: [
+        {
+          path: "registry/wuhan/examples/think/think-demo.tsx",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      component: React.lazy(async () => {
+        const mod = await import("@/registry/wuhan/examples/think/think-demo.tsx");
+        const exportName =
+          Object.keys(mod).find(
+            (key) =>
+              typeof mod[key] === "function" || typeof mod[key] === "object",
+          ) || item.name;
+        return { default: mod.default || mod[exportName] };
+      }),
+      categories: undefined,
+      meta: undefined,
+    },
+    "think-default": {
+      name: "think-default",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["think"],
+      files: [
+        {
+          path: "registry/wuhan/examples/think/think-default.tsx",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      component: React.lazy(async () => {
+        const mod = await import("@/registry/wuhan/examples/think/think-default.tsx");
+        const exportName =
+          Object.keys(mod).find(
+            (key) =>
+              typeof mod[key] === "function" || typeof mod[key] === "object",
+          ) || item.name;
+        return { default: mod.default || mod[exportName] };
+      }),
+      categories: undefined,
+      meta: undefined,
+    },
+    "think-active": {
+      name: "think-active",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["think"],
+      files: [
+        {
+          path: "registry/wuhan/examples/think/think-active.tsx",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      component: React.lazy(async () => {
+        const mod = await import("@/registry/wuhan/examples/think/think-active.tsx");
+        const exportName =
+          Object.keys(mod).find(
+            (key) =>
+              typeof mod[key] === "function" || typeof mod[key] === "object",
+          ) || item.name;
+        return { default: mod.default || mod[exportName] };
+      }),
+      categories: undefined,
+      meta: undefined,
+    },
+    "think-disabled": {
+      name: "think-disabled",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["think"],
+      files: [
+        {
+          path: "registry/wuhan/examples/think/think-disabled.tsx",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      component: React.lazy(async () => {
+        const mod = await import("@/registry/wuhan/examples/think/think-disabled.tsx");
+        const exportName =
+          Object.keys(mod).find(
+            (key) =>
+              typeof mod[key] === "function" || typeof mod[key] === "object",
+          ) || item.name;
+        return { default: mod.default || mod[exportName] };
+      }),
+      categories: undefined,
+      meta: undefined,
+    },
+    "think-loading": {
+      name: "think-loading",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["think"],
+      files: [
+        {
+          path: "registry/wuhan/examples/think/think-loading.tsx",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      component: React.lazy(async () => {
+        const mod = await import("@/registry/wuhan/examples/think/think-loading.tsx");
+        const exportName =
+          Object.keys(mod).find(
+            (key) =>
+              typeof mod[key] === "function" || typeof mod[key] === "object",
+          ) || item.name;
+        return { default: mod.default || mod[exportName] };
+      }),
+      categories: undefined,
+      meta: undefined,
+    },
+    "think-custom-icon": {
+      name: "think-custom-icon",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["think"],
+      files: [
+        {
+          path: "registry/wuhan/examples/think/think-custom-icon.tsx",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      component: React.lazy(async () => {
+        const mod = await import("@/registry/wuhan/examples/think/think-custom-icon.tsx");
+        const exportName =
+          Object.keys(mod).find(
+            (key) =>
+              typeof mod[key] === "function" || typeof mod[key] === "object",
+          ) || item.name;
+        return { default: mod.default || mod[exportName] };
+      }),
+      categories: undefined,
+      meta: undefined,
+    },
+    "think-controlled": {
+      name: "think-controlled",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["think"],
+      files: [
+        {
+          path: "registry/wuhan/examples/think/think-controlled.tsx",
+          type: "registry:example",
+          target: "",
+        },
+      ],
+      component: React.lazy(async () => {
+        const mod = await import("@/registry/wuhan/examples/think/think-controlled.tsx");
+        const exportName =
+          Object.keys(mod).find(
+            (key) =>
+              typeof mod[key] === "function" || typeof mod[key] === "object",
           ) || item.name;
         return { default: mod.default || mod[exportName] };
       }),
